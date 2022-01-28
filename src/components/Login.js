@@ -9,7 +9,8 @@ const Login = () => {
             username: '',
             password: ''
     });
-
+    
+    const [error, setError] = useState();
     const { push } = useHistory();
 
 const handleChange = (e) => {
@@ -32,6 +33,7 @@ const handleClick = (e) => {
         })
         .catch(err=> {
             console.log(err)
+            setError('incorrect login information');
         })
 }
     
@@ -57,7 +59,7 @@ const handleClick = (e) => {
                 </label>
                 <button id='submit' onClick={handleClick}>Login</button>
             </form>
-            <p id='error'></p>
+            <p id='error'>{error}</p>
         </ModalContainer>
     </ComponentContainer>);
 }
