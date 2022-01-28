@@ -117,9 +117,16 @@ In this project, you will demonstrate your mastery of these skills by creating *
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers below.
 
 1. Explain what a token is used for.
+    A token is attached to a user when they gain access to PrivateRoutes of a site (ie., correctly log in). Having a valid token allows them to access restricted pages that they need authentication for. 
 
 2. What steps can you take in your web apps to keep your data secure?
+    You can make your web apps more secure by requiring users to have a valid login for the site. This gives them access to PrivateRoutes that not everyone who travels to your site can see without authorization.
 
 3. Describe how web servers work.
+    Web servers are connected to the internet and store information/code that can be shared across the world. The physical device is what stores the code for the website. There is also a code that we call web-server which is what delivers (or "serves") the web page to users. People use their computer or other device to connect to the internet, use a URL to retrieve information from a web server and then get what they need from the website, etc.
 
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+    C - create - POST
+    R - read - GET
+    U - update - PUT
+    D - delete - DELETE
