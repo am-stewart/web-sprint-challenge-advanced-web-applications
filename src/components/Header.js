@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Header = () => {
+    // const isLoggedIn = localStorage.getItem('token');
+
     return(
         <HeaderStyle>
             <p>Blogger Pro</p>
