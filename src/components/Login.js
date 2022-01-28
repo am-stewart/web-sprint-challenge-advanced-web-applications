@@ -22,10 +22,8 @@ const handleChange = (e) => {
 
 const handleClick = (e) => {
     e.preventDefault();
-    console.log('click-- CHANGE THIS')
     axios.post('http://localhost:5000/api/login', creds)
         .then(resp=>{
-            console.log(resp)
             localStorage.setItem('token', resp.data.token)
             localStorage.setItem('role', resp.data.role)
             localStorage.setItem('username', resp.data.username)
@@ -33,7 +31,7 @@ const handleClick = (e) => {
         })
         .catch(err=> {
             console.log(err)
-            setError('incorrect login information');
+            setError('invalid login information');
         })
 }
     
