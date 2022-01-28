@@ -25,9 +25,6 @@ const App = () => {
             <Login />
           </Route>
             </Switch>
-          {/* <Route path="/">
-            <Login/>
-          </Route>           */}
       </RouteContainer>
     </AppContainer>
   )
